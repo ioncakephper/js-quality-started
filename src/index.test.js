@@ -1,4 +1,4 @@
-const add = require('./index');
+const { add } = require('./index');
 
 describe('add function', () => {
   test('should add two numbers correctly', () => {
