@@ -9,6 +9,8 @@
     "lint:fix": "eslint . --fix",
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
+    "format:md": "prettier --check '**/*.md'",
+    "format:md:fix": "prettier --write '**/*.md'",
     "lint:md": "markdownlint --ignore-path .gitignore .",
     "lint:md:fix": "markdownlint --ignore-path .gitignore --fix .",
     "prepare": "husky install"
