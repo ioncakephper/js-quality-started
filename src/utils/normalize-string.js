@@ -12,6 +12,8 @@ function normalizeString(str) {
     throw new Error('Input cannot be null or undefined.');
   }
 
+       
+
   let s = String(str);
 
   s = s.trim();
