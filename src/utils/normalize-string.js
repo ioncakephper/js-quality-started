@@ -12,6 +12,9 @@ function normalizeString(str) {
     throw new Error('Input cannot be null or undefined.');
   }       
 
+  
+
+
 
   
 
