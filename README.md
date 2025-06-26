@@ -84,7 +84,6 @@ This template includes one GitHub Action workflows located in the `.github/workf
 
 - **`ci.yml`**: This workflow runs on every push and pull request to the `main` branch. It acts as a final validation gate, ensuring that all tests, linting, and formatting checks pass before code is merged.
 
-
 The workflow performs the following steps across multiple Node.js versions (18.x, 20.x):
 
 1. **Install dependencies** using `npm ci` for fast, reliable installs.
