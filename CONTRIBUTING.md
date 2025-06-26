@@ -20,7 +20,7 @@ Please take a moment to review this document to understand our contribution guid
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by the [js-quality-starter Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to shytiger@yahoo.com.
+This project and everyone participating in it is governed by the [js-quality-starter Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to <shytiger@yahoo.com>.
 
 ## How to Contribute
 

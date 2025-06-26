@@ -59,7 +59,6 @@ In the project directory, you can run:
 - `npm run format:md`: Checks for formatting issues with Prettier for Markdown files.
 - `npm run format:md:fix`: Formats all Markdown files with Prettier.
 
-
 ## How It Works
 
 ### Pre-commit Hooks
