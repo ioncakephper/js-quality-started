@@ -99,8 +99,10 @@ This project enforces code style using ESLint and Prettier.
 
 - `npm run lint`: Checks for linting errors.
 - `npm run lint:fix`: Automatically fixes fixable linting errors.
+- `npm run lint:md:fix`: Automatically fixes fixable linting errors in Markdown files.
 - `npm run format`: Checks for formatting issues.
 - `npm run format:fix`: Automatically formats files.
+- `npm run format:md:fix`: Automatically formats Markdown files.
 
 Pre-commit hooks will automatically run `eslint --fix` and `prettier --write` on staged files.
 
