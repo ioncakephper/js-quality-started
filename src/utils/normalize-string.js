@@ -12,12 +12,12 @@ function normalizeString(str) {
     throw new Error('Input cannot be null or undefined.');
   }
 
-       
+
 
   let s = String(str)        ;
 
   s = s.trim();
-  s = s.toLowerCase();
+  s = s.toLowerCase()      ;
 
   // Replace non-alphanumeric (excluding dash and underscore) with a dash
   s = s.replace(/[^a-z0-9_-]/g, '-');
