@@ -14,7 +14,7 @@ function normalizeString(str) {
 
        
 
-  let s = String(str)  ;
+  let s = String(str)         ;
 
   s = s.trim();
   s = s.toLowerCase();
