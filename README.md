@@ -2,8 +2,6 @@
 
 [![Codecov](https://codecov.io/gh/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/branch/main/graph/badge.svg?token=YOUR_CODECOV_TOKEN)](https://codecov.io/gh/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME)
 
-
-
 A template repository for modern JavaScript projects with pre-configured linting, formatting, testing, and CI/CD using GitHub Actions.
 
 This template provides a solid foundation for any new JavaScript project, ensuring code quality and consistency from the start.
@@ -12,14 +10,14 @@ This template provides a solid foundation for any new JavaScript project, ensuri
 
 This template comes pre-configured with a suite of modern, industry-standard tools to ensure your project maintains high code quality.
 
-| Tool                                                      | Purpose                                                                                                                                  |
-| :-------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
-| **ESLint**                         | Statically analyzes your code to quickly find and fix problems. It's configured with recommended rules to enforce best practices.        |
-| **Prettier**                      | An opinionated code formatter that enforces a consistent style across your entire codebase, eliminating arguments over code style.       |
-| **Jest**                            | A delightful JavaScript Testing Framework with a focus on simplicity. It's set up and ready for you to write unit and integration tests. |
-| **markdownlint** | A linter for Markdown files to enforce consistent style and catch common errors in documentation.                                        |
-| **Husky**            | Manages Git hooks to make it easy to run scripts at specific stages, like before a commit.                                               |
-| **lint-staged**  | Works with Husky to run linters and formatters on your staged files _before_ they are committed, ensuring no bad code gets in.           |
+| Tool               | Purpose                                                                                                                                  |
+| :----------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| **ESLint**         | Statically analyzes your code to quickly find and fix problems. It's configured with recommended rules to enforce best practices.        |
+| **Prettier**       | An opinionated code formatter that enforces a consistent style across your entire codebase, eliminating arguments over code style.       |
+| **Jest**           | A delightful JavaScript Testing Framework with a focus on simplicity. It's set up and ready for you to write unit and integration tests. |
+| **markdownlint**   | A linter for Markdown files to enforce consistent style and catch common errors in documentation.                                        |
+| **Husky**          | Manages Git hooks to make it easy to run scripts at specific stages, like before a commit.                                               |
+| **lint-staged**    | Works with Husky to run linters and formatters on your staged files _before_ they are committed, ensuring no bad code gets in.           |
 | **GitHub Actions** | Automates your workflow with two pre-configured CI pipelines for validating code on `main` and all other feature branches.               |
 
 ## Getting Started
@@ -40,11 +38,13 @@ This template comes pre-configured with a suite of modern, industry-standard too
    cd your-new-repo
    ```
 
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-    This will install all dependencies and also run the `prepare` script, which sets up the Husky pre-commit hooks automatically.
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+   This will install all dependencies and also run the `prepare` script, which sets up the Husky pre-commit hooks automatically.
 
 3. Start coding!
 
@@ -55,8 +55,6 @@ After creating your repository from this template, be sure to:
 1. **Update `package.json`**: Change the `name`, `description`, and `author` fields.
 2. **Update `LICENSE`**: Modify the `[year]` and `[fullname]` to reflect your project's ownership.
 3. **Update `CODE_OF_CONDUCT.md` and `CONTRIBUTING.md`**: Replace the `[YOUR_PROJECT_CONTACT_EMAIL]` placeholder with a valid project contact email.
-
-
 
 ## Available Scripts
 
@@ -91,14 +89,12 @@ Both workflows perform the following steps across multiple Node.js versions (18.
 
 1. **Install dependencies** using `npm ci` for fast, reliable installs.
 2. **Lint code** with `npm run lint`.
-3.  **Lint Markdown files** with `npm run lint:md`.
-4.  **Check code formatting** with `npm run format`.
-5.  **Check Markdown formatting** with `npm run format:md`.
-6.  **Check for broken links** in Markdown with `npm run check:links`.
-7.  **Audit for vulnerabilities** with `npm audit --production`.
-8.  **Run tests** with `npm test`.
-
-
+3. **Lint Markdown files** with `npm run lint:md`.
+4. **Check code formatting** with `npm run format`.
+5. **Check Markdown formatting** with `npm run format:md`.
+6. **Check for broken links** in Markdown with `npm run check:links`.
+7. **Audit for vulnerabilities** with `npm audit --production`.
+8. **Run tests** with `npm test`.
 
 ## Customization
 
@@ -117,18 +113,20 @@ This template is configured to generate code coverage reports using Jest. The re
 To get a dynamic code coverage badge like the one at the top of this `README.md`, you can integrate with a service like Codecov or Coveralls.
 
 **Steps to set up Codecov (example):**
-1.  Sign up for Codecov with your GitHub account.
-2.  Add your repository to Codecov.
-3.  Codecov will provide you with a `CODECOV_TOKEN`. Add this token as a secret in your GitHub repository settings (e.g., `CODECOV_TOKEN`).
-4.  Add a step to your CI workflow (`.github/workflows/ci.yml`) to upload the coverage report to Codecov. This typically involves adding a step like:
-    ```yaml
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v4
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }}
-    ```
-5.  Update the badge URL in `README.md` with your specific repository details and token (if required by Codecov for public repos, though often not for public repos).
 
+1. Sign up for Codecov with your GitHub account.
+2. Add your repository to Codecov.
+3. Codecov will provide you with a `CODECOV_TOKEN`. Add this token as a secret in your GitHub repository settings (e.g., `CODECOV_TOKEN`).
+4. Add a step to your CI workflow (`.github/workflows/ci.yml`) to upload the coverage report to Codecov. This typically involves adding a step like:
+
+   ```yaml
+   - name: Upload coverage to Codecov
+     uses: codecov/codecov-action@v4
+     with:
+       token: ${{ secrets.CODECOV_TOKEN }}
+   ```
+
+5. Update the badge URL in `README.md` with your specific repository details and token (if required by Codecov for public repos, though often not for public repos).
 
 ## Contributing
 
