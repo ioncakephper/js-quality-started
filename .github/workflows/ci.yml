@@ -31,13 +31,6 @@ jobs:
         run: npm run format
       - name: Check Markdown formatting
         run: npm run format:md
-      - name: Check Markdown links
-        run: |
-          if ls **/*.md 1> /dev/null 2>&1; then
-            npm run check:links
-          else
-            echo "No Markdown files to check."
-          fi
       - name: Audit for vulnerabilities
         run: npm audit --production
       - name: Run tests

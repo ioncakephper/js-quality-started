@@ -80,21 +80,20 @@ If a file has linting or formatting errors, the tools will attempt to fix them a
 
 ### CI/CD Pipelines
 
-This template includes two GitHub Actions workflows located in the `.github/workflows` directory:
+This template includes one GitHub Action workflows located in the `.github/workflows` directory:
 
-1. **`ci.yml`**: This workflow runs on every push and pull request to the `main` branch. It acts as a final validation gate, ensuring that all tests, linting, and formatting checks pass before code is merged.
-2. **`feature-branch-ci.yml`**: This workflow runs on all branches _except_ `main`. It provides early feedback on feature branches, running the same set of checks to ensure quality throughout the development process.
+- **`ci.yml`**: This workflow runs on every push and pull request to the `main` branch. It acts as a final validation gate, ensuring that all tests, linting, and formatting checks pass before code is merged.
 
-Both workflows perform the following steps across multiple Node.js versions (18.x, 20.x):
+
+The workflow performs the following steps across multiple Node.js versions (18.x, 20.x):
 
 1. **Install dependencies** using `npm ci` for fast, reliable installs.
 2. **Lint code** with `npm run lint`.
 3. **Lint Markdown files** with `npm run lint:md`.
 4. **Check code formatting** with `npm run format`.
 5. **Check Markdown formatting** with `npm run format:md`.
-6. **Check for broken links** in Markdown with `npm run check:links`.
-7. **Audit for vulnerabilities** with `npm audit --production`.
-8. **Run tests** with `npm test`.
+6. **Audit for vulnerabilities** with `npm audit --production`.
+7. **Run tests** with `npm test`.
 
 ## Customization
 
