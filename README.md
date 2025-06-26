@@ -56,12 +56,14 @@ In the project directory, you can run:
 - `npm run lint:fix`: Lints and automatically fixes fixable issues.
 - `npm run format`: Checks for formatting issues with Prettier.
 - `npm run format:fix`: Formats all supported files with Prettier.
+- `npm run format:md`: Checks for formatting issues with Prettier for Markdown files.
+- `npm run format:md:fix`: Formats all Markdown files with Prettier.
 
 ## How It Works
 
 ### Pre-commit Hooks
 
-This project uses `Husky` and `lint-staged` to run `eslint --fix` and `prettier --write` on staged `.js` files every time you make a commit. This automated quality gate ensures that no code that violates the style guide ever gets into the codebase.
+This project uses `Husky` and `lint-staged` to run `eslint --fix`, `prettier --write` (for both code and Markdown), and `markdownlint --fix` on staged files every time you make a commit. This automated quality gate ensures that no code or documentation that violates the style guide ever gets into the codebase.
 
 If a file has linting or formatting errors, the tools will attempt to fix them automatically. If they can, the fixed code is what gets committed. If they can't, the commit is aborted so you can fix the issues manually.
 
@@ -76,8 +78,9 @@ Both workflows perform the following steps across multiple Node.js versions (18.
 
 1. **Install dependencies** using `npm ci` for fast, reliable installs.
 2. **Lint code** with `npm run lint`.
-3. **Check formatting** with `npm run format`.
-4. **Run tests** with `npm test`.
+3. **Check Markdown formatting** with `npm run format:md`.
+4. **Check formatting** with `npm run format`.
+5. **Run tests** with `npm test`.
 
 ## Customization
 
