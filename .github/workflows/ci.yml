@@ -25,11 +25,15 @@ jobs:
         run: npm ci
       - name: Lint code
         run: npm run lint
-      - name: Check formatting
-        run: npm run format
       - name: Lint Markdown files
         run: npm run lint:md
+      - name: Check formatting
+        run: npm run format
       - name: Check Markdown formatting
         run: npm run format:md
+      - name: Check Markdown links
+        run: npm run check:links
+      - name: Audit for vulnerabilities
+        run: npm audit --production
       - name: Run tests
         run: npm test
