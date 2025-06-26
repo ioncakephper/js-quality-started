@@ -14,7 +14,7 @@
     "lint:md": "markdownlint --ignore-path .gitignore .",
     "lint:md:fix": "markdownlint --ignore-path .gitignore --fix .",
     "audit:ci": "npm audit --production",
-    "check:links": "markdown-link-check '**/*.md'",
+    "check:links": "markdown-link-check **/*.md",
     "prepare": "husky install"
   },
   "keywords": [
