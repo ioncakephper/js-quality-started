@@ -10,12 +10,7 @@
 function normalizeString(str) {
   if (str === null || str === undefined) {
     throw new Error('Input cannot be null or undefined.');
-  }       
-
-  
-   
-
-
+  }
 
   let s = String(str);
 
