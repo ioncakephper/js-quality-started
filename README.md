@@ -6,11 +6,11 @@ This template provides a solid foundation for any new JavaScript project, ensuri
 
 ## Features
 
--   **Linting** with [ESLint](https://eslint.org/) to find and fix problems in your JavaScript code.
--   **Formatting** with [Prettier](https://prettier.io/) for a consistent code style.
--   **Testing** with [Jest](https://jestjs.io/) as the testing framework.
--   **CI/CD** with [GitHub Actions](https://github.com/features/actions) to automate linting, formatting checks, and testing on every push and pull request.
--   **Pre-commit Hooks** with [Husky](https://typicode.github.io/husky/) and [lint-staged](https://github.com/okonet/lint-staged) to lint and format your code before you even commit it.
+- **Linting** with [ESLint](https://eslint.org/) to find and fix problems in your JavaScript code.
+- **Formatting** with [Prettier](https://prettier.io/) for a consistent code style.
+- **Testing** with [Jest](https://jestjs.io/) as the testing framework.
+- **CI/CD** with [GitHub Actions](https://github.com/features/actions) to automate linting, formatting checks, and testing on every push and pull request.
+- **Pre-commit Hooks** with [Husky](https://typicode.github.io/husky/) and [lint-staged](https://github.com/okonet/lint-staged) to lint and format your code before you even commit it.
 
 ## Getting Started
 
@@ -21,6 +21,7 @@ Click the "Use this template" button on the GitHub repository page to create a n
 ### Manual Setup
 
 1.  Clone the repository:
+
     ```bash
     git clone https://github.com/your-username/js-quality-starter.git
     cd js-quality-starter
@@ -35,11 +36,11 @@ Click the "Use this template" button on the GitHub repository page to create a n
 
 In the project directory, you can run:
 
--   `npm test`: Runs the tests using Jest.
--   `npm run lint`: Lints all `.js` files in the project.
--   `npm run lint:fix`: Lints and automatically fixes fixable issues.
--   `npm run format`: Checks for formatting issues with Prettier.
--   `npm run format:fix`: Formats all supported files with Prettier.
+- `npm test`: Runs the tests using Jest.
+- `npm run lint`: Lints all `.js` files in the project.
+- `npm run lint:fix`: Lints and automatically fixes fixable issues.
+- `npm run format`: Checks for formatting issues with Prettier.
+- `npm run format:fix`: Formats all supported files with Prettier.
 
 ## How It Works
 

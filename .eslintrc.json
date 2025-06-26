@@ -5,16 +5,10 @@
     "node": true,
     "jest/globals": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:jest/recommended",
-    "prettier"
-  ],
+  "extends": ["eslint:recommended", "plugin:jest/recommended", "prettier"],
   "parserOptions": {
     "ecmaVersion": "latest"
   },
-  "plugins": [
-    "jest"
-  ],
+  "plugins": ["jest"],
   "rules": {}
 }
