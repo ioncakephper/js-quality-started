@@ -1,8 +1,18 @@
 # js-quality-starter
 
+[![CI](https://github.com/your-username/your-new-repo/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/your-new-repo/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/your-username/your-new-repo/graph/badge.svg?token=YOUR_CODECOV_TOKEN)](https://codecov.io/gh/your-username/your-new-repo)
+[![Code style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A template repository for modern JavaScript projects with pre-configured linting, formatting, testing, and CI/CD using GitHub Actions.
 
 This template provides a solid foundation for any new JavaScript project, ensuring code quality and consistency from the start.
+
+<!-- Optional: Add a GIF demonstrating the pre-commit hook in action -->
+<!-- <p align="center">
+  <img src="https://path-to-your/demo.gif" alt="Demonstration of pre-commit hooks" />
+</p> -->
 
 ## What's Inside?
 
@@ -78,7 +88,7 @@ If a file has linting or formatting errors, the tools will attempt to fix them a
 
 ### CI/CD Pipelines
 
-This template includes one GitHub Action workflows located in the `.github/workflows` directory:
+This template includes one GitHub Action workflow located in the `.github/workflows` directory:
 
 - **`ci.yml`**: This workflow runs on every push and pull request to the `main` branch. It acts as a final validation gate, ensuring that all tests, linting, and formatting checks pass before code is merged.
 
