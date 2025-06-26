@@ -1,6 +1,6 @@
 # js-quality-starter
 
-[![Codecov](https://codecov.io/gh/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/branch/main/graph/badge.svg?token=YOUR_CODECOV_TOKEN)](https://codecov.io/gh/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME)
+[![Codecov](https://codecov.io/gh/ioncakephper/js-quality-starter/branch/main/graph/badge.svg?token=12d4bb6f-21c2-4f8b-8adf-ca4e74ff1232)](https://codecov.io/gh/ioncakephper/js-quality-starter)
 
 A template repository for modern JavaScript projects with pre-configured linting, formatting, testing, and CI/CD using GitHub Actions.
 
