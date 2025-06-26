@@ -16,7 +16,6 @@ function normalizeString(str) {
 
 
 
-  
 
   let s = String(str);
 
