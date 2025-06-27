@@ -9,13 +9,6 @@ A template repository for modern JavaScript projects with pre-configured linting
 
 This template provides a solid foundation for any new JavaScript project, ensuring code quality and consistency from the start.
 
-<!-- Optional: Add a GIF demonstrating the pre-commit hook in action -->
-<!-- <p align="center">
-  <img src="https://path-to-your/demo.gif" alt="Demonstration of pre-commit hooks" />
-</p> -->
-
----
-
 ## Table of Contents <!-- omit in toc -->
 
 - [Quick Start](#quick-start)
@@ -34,7 +27,6 @@ This template provides a solid foundation for any new JavaScript project, ensuri
 - [Contributing](#contributing)
 - [License](#license)
 
----
 
 ## Quick Start
 
@@ -66,6 +58,7 @@ Tired of repetitive setup, inconsistent code, and integration headaches? See how
 | **Initial Setup Time** | Very High                | High                                   | Very Low                      |
 | **Code Quality Assurance** | Manual                   | Limited / Manual                       | Automated & Proactive           |
 | **Team Collaboration Aid** | Low                      | Moderate                               | High                            |
+
 
 ## What's Inside?
 
