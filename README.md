@@ -4,6 +4,57 @@ A template repository for modern JavaScript projects with pre-configured linting
 
 This template provides a solid foundation for any new JavaScript project, ensuring code quality and consistency from the start.
 
+## Table of Contents <!-- omit in toc -->
+
+- [Quick Start](#quick-start)
+- [Why Choose `js-quality-started`?](#why-choose-js-quality-started)
+- [What's Inside?](#whats-inside)
+- [Getting Started](#getting-started)
+  - [Using as a Template](#using-as-a-template)
+  - [Manual Setup](#manual-setup)
+  - [Post-Template Setup](#post-template-setup)
+- [Available Scripts](#available-scripts)
+- [How It Works](#how-it-works)
+  - [Pre-commit Hooks](#pre-commit-hooks)
+  - [CI/CD Pipelines](#cicd-pipelines)
+- [Customization](#customization)
+- [Code Coverage](#code-coverage)
+- [Contributing](#contributing)
+- [License](#license)
+
+
+## Quick Start
+
+```bash
+npx degit your-github-username/js-quality-started my-new-project
+cd my-new-project
+npm install
+npm test
+# Start building!
+```
+
+## Why Choose `js-quality-started`?
+
+Tired of repetitive setup, inconsistent code, and integration headaches? See how `js-quality-started` provides a superior foundation compared to starting from scratch or using basic boilerplates.
+
+| Criteria                      | Minimal/Empty Repository | Basic Boilerplate                      | `js-quality-started` Template |
+| :---------------------------- | :----------------------- | :------------------------------------- | :---------------------------- |
+| **Core Purpose** | Blank slate              | Quick start, basic structure           | Quality, consistency, efficiency    |
+| **Linting (e.g., ESLint)** | ❌ No                    | ⚙️ Manual setup required / Basic       | ✅ Pre-configured, opinionated    |
+| **Formatting (e.g., Prettier)** | ❌ No                    | ⚙️ Manual setup required              | ✅ Pre-configured                 |
+| **Testing Framework (e.g., Jest)** | ❌ No                    | ⚙️ Manual setup required              | ✅ Pre-configured with coverage   |
+| **Test Coverage Reporting** | ❌ No                    | ❌ No                                  | ✅ Included                     |
+| **Build/Bundling Tool** | ❌ No                    | ⚙️ Manual setup required / Basic       | ✅ Pre-configured (e.g., Babel) |
+| **Language Support** | JS Only                  | JS Only                                | JS (easily extensible to TS)    |
+| **Documentation Gen. Tools** | ❌ No                    | ❌ No                                  | ⚙️ Manual add/Configuring        |
+| **CI/CD Configuration** | ❌ No                    | ⚙️ Manual setup required / Basic       | ✅ Pre-configured GitHub Actions   |
+| **Community Health Files** | ❌ No                    | ⚙️ Basic `README.md`                  | ✅ Comprehensive (`README`, `CONTRIBUTING`, `LICENSE`, etc.) |
+| **Opinionation Level** | None                     | Low                                    | High (for quality tools)      |
+| **Initial Setup Time** | Very High                | High                                   | Very Low                      |
+| **Code Quality Assurance** | Manual                   | Limited / Manual                       | Automated & Proactive           |
+| **Team Collaboration Aid** | Low                      | Moderate                               | High                            |
+
+
 ## What's Inside?
 
 This template comes pre-configured with a suite of modern, industry-standard tools to ensure your project maintains high code quality.
