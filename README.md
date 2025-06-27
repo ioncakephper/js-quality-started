@@ -27,7 +27,6 @@ This template provides a solid foundation for any new JavaScript project, ensuri
 - [Contributing](#contributing)
 - [License](#license)
 
-
 ## Quick Start
 
 ```bash
@@ -42,23 +41,22 @@ npm test
 
 Tired of repetitive setup, inconsistent code, and integration headaches? See how `js-quality-started` provides a superior foundation compared to starting from scratch or using basic boilerplates.
 
-| Criteria                      | Minimal/Empty Repository | Basic Boilerplate                      | `js-quality-started` Template |
-| :---------------------------- | :----------------------- | :------------------------------------- | :---------------------------- |
-| **Core Purpose** | Blank slate              | Quick start, basic structure           | Quality, consistency, efficiency    |
-| **Linting (e.g., ESLint)** | ❌ No                    | ⚙️ Manual setup required / Basic       | ✅ Pre-configured, opinionated    |
-| **Formatting (e.g., Prettier)** | ❌ No                    | ⚙️ Manual setup required              | ✅ Pre-configured                 |
-| **Testing Framework (e.g., Jest)** | ❌ No                    | ⚙️ Manual setup required              | ✅ Pre-configured with coverage   |
-| **Test Coverage Reporting** | ❌ No                    | ❌ No                                  | ✅ Included                     |
-| **Build/Bundling Tool** | ❌ No                    | ⚙️ Manual setup required / Basic       | ✅ Pre-configured (e.g., Babel) |
-| **Language Support** | JS Only                  | JS Only                                | JS (easily extensible to TS)    |
-| **Documentation Gen. Tools** | ❌ No                    | ❌ No                                  | ⚙️ Manual add/Configuring        |
-| **CI/CD Configuration** | ❌ No                    | ⚙️ Manual setup required / Basic       | ✅ Pre-configured GitHub Actions   |
-| **Community Health Files** | ❌ No                    | ⚙️ Basic `README.md`                  | ✅ Comprehensive (`README`, `CONTRIBUTING`, `LICENSE`, etc.) |
-| **Opinionation Level** | None                     | Low                                    | High (for quality tools)      |
-| **Initial Setup Time** | Very High                | High                                   | Very Low                      |
-| **Code Quality Assurance** | Manual                   | Limited / Manual                       | Automated & Proactive           |
-| **Team Collaboration Aid** | Low                      | Moderate                               | High                            |
-
+| Criteria                           | Minimal/Empty Repository | Basic Boilerplate                | `js-quality-started` Template                                |
+| :--------------------------------- | :----------------------- | :------------------------------- | :----------------------------------------------------------- |
+| **Core Purpose**                   | Blank slate              | Quick start, basic structure     | Quality, consistency, efficiency                             |
+| **Linting (e.g., ESLint)**         | ❌ No                    | ⚙️ Manual setup required / Basic | ✅ Pre-configured, opinionated                               |
+| **Formatting (e.g., Prettier)**    | ❌ No                    | ⚙️ Manual setup required         | ✅ Pre-configured                                            |
+| **Testing Framework (e.g., Jest)** | ❌ No                    | ⚙️ Manual setup required         | ✅ Pre-configured with coverage                              |
+| **Test Coverage Reporting**        | ❌ No                    | ❌ No                            | ✅ Included                                                  |
+| **Build/Bundling Tool**            | ❌ No                    | ⚙️ Manual setup required / Basic | ✅ Pre-configured (e.g., Babel)                              |
+| **Language Support**               | JS Only                  | JS Only                          | JS (easily extensible to TS)                                 |
+| **Documentation Gen. Tools**       | ❌ No                    | ❌ No                            | ⚙️ Manual add/Configuring                                    |
+| **CI/CD Configuration**            | ❌ No                    | ⚙️ Manual setup required / Basic | ✅ Pre-configured GitHub Actions                             |
+| **Community Health Files**         | ❌ No                    | ⚙️ Basic `README.md`             | ✅ Comprehensive (`README`, `CONTRIBUTING`, `LICENSE`, etc.) |
+| **Opinionation Level**             | None                     | Low                              | High (for quality tools)                                     |
+| **Initial Setup Time**             | Very High                | High                             | Very Low                                                     |
+| **Code Quality Assurance**         | Manual                   | Limited / Manual                 | Automated & Proactive                                        |
+| **Team Collaboration Aid**         | Low                      | Moderate                         | High                                                         |
 
 ## What's Inside?
 
