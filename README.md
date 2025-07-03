@@ -37,6 +37,17 @@ npm test
 # Start building!
 ```
 
+## Getting Started with Your New Project
+
+After creating a new repository from this template and cloning it to your local machine, run the setup script to personalize your project:
+
+```bash
+npm install # if you haven't already
+npm run setup
+```
+
+This script will guide you through updating the project name, author, and other details.
+
 ## Why Choose `js-quality-started`?
 
 Tired of repetitive setup, inconsistent code, and integration headaches? See how `js-quality-started` provides a superior foundation compared to starting from scratch or using basic boilerplates.
