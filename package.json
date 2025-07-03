@@ -4,6 +4,7 @@
   "description": "A template repository for modern JavaScript projects with pre-configured linting, formatting, testing, and CI/CD using GitHub Actions.",
   "main": "src/index.js",
   "scripts": {
+    "setup": "node setup.js",
     "test": "jest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
