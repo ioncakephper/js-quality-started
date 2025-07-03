@@ -12,7 +12,7 @@ const rl = readline.createInterface({
 
 // List of files that need to be modified by the script
 const filesToModify = [
-  'project.json',
+  'package.json',
   'CONTRIBUTING.md',
   'LICENSE',
   'CODE_OF_CONDUCT.md',
