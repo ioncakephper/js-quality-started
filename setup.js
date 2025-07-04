@@ -2,11 +2,10 @@
 
 const fs = require('fs');
 const path = require('path');
-const inquirer = require('inquirer'); // Import Inquirer
 
 // List of files that need to be modified by the script
 const filesToModify = [
-  'project.json',
+  'package.json',
   'CONTRIBUTING.md',
   'LICENSE',
   'CODE_OF_CONDUCT.md',
@@ -17,7 +16,7 @@ const filesToModify = [
  * Collects all necessary inputs from the user using Inquirer.
  * @returns {Promise<Object>} An object containing all user inputs.
  */
-async function getUserInputs() {
+async function getUserInputs(inquirer) {
   console.log('\n--- Project Setup ---');
   console.log("Let's personalize your new repository.");
   console.log('Please provide the following information:');
@@ -208,8 +207,10 @@ async function processFiles(inputs) {
  * Main function to run the setup script.
  */
 async function runSetup() {
+  let inquirer;
   try {
-    const inputs = await getUserInputs();
+    inquirer = (await import('inquirer')).default;
+    const inputs = await getUserInputs(inquirer);
     await processFiles(inputs);
 
     console.log('\n--- Setup Complete! ---');
