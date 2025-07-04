@@ -13,6 +13,17 @@ This template provides a solid foundation for any new JavaScript project, ensuri
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Quick Start](#quick-start)
+- [Getting Started with Your New Project](#getting-started-with-your-new-project)
+- [Why Choose `js-quality-started`?](#why-choose-js-quality-started)
+- [What's Inside?](#whats-inside)
+- [Getting Started](#getting-started)
+  - [Using as a Template](#using-as-a-template)
+  - [Manual Setup](#manual-setup)
+  - [Post-Template Setup](#post-template-setup)
+- [Available Scripts](#available-scripts)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Quick Start
