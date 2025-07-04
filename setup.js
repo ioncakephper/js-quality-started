@@ -6,11 +6,11 @@ const inquirer = require('inquirer'); // Import Inquirer
 
 // List of files that need to be modified by the script
 const filesToModify = [
-    'package.json',
-    'CONTRIBUTING.md',
-    'LICENSE',
-    'CODE_OF_CONDUCT.md',
-    'README.md'
+  'project.json',
+  'CONTRIBUTING.md',
+  'LICENSE',
+  'CODE_OF_CONDUCT.md',
+  'README.md',
 ];
 
 /**
