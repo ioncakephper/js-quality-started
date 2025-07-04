@@ -54,4 +54,5 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           files: ./coverage/lcov.info # Path to your lcov coverage file
-        if: success() && secrets.CODECOV_TOKEN # Only run if previous steps succeeded and token exists
+        # Corrected 'if' condition for accessing secrets
+        if: success() && github.event_name == 'push' && github.repository_owner == 'your-github-username' # Replace 'your-github-username' with your actual username/organization. For pull_requests, tokens are often restricted by default.
