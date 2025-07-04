@@ -14,9 +14,19 @@
     "format:md:fix": "prettier --write **/*.md",
     "lint:md": "markdownlint --ignore-path .gitignore .",
     "lint:md:fix": "markdownlint --ignore-path .gitignore --fix .",
+    "fix:all": "npm run lint:fix && npm run format:fix && npm run lint:md:fix && npm run format:md:fix",
+    "toc": "doctoc --notitle README.md",
     "audit:ci": "npm audit --production",
     "prepare": "husky install"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{{GITHUB_USERNAME}}/{{PROJECT_NAME}}.git"
+  },
+  "bugs": {
+    "url": "https://github.com/{{GITHUB_USERNAME}}/{{PROJECT_NAME}}/issues"
+  },
+  "homepage": "https://github.com/{{GITHUB_USERNAME}}/{{PROJECT_NAME}}#readme",
   "keywords": [
     "{{PROJECT_KEYWORDS}}"
   ],
@@ -30,6 +40,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jest": "^28.2.0",
     "husky": "^8.0.0",
+    "doctoc": "^2.2.1",
     "inquirer": "^12.7.0",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.2",
@@ -43,7 +54,8 @@
     ],
     "*.md": [
       "markdownlint --fix",
-      "prettier --write"
+      "prettier --write",
+      "doctoc"
     ]
   }
 }

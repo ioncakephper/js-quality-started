@@ -1,4 +1,4 @@
-# js-quality-starter
+# {{PROJECT_NAME}}
 
 [![CI](https://github.com/your-username/your-new-repo/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/your-new-repo/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/your-username/your-new-repo/graph/badge.svg?token=YOUR_CODECOV_TOKEN)](https://codecov.io/gh/your-username/your-new-repo)
@@ -9,31 +9,19 @@ A template repository for modern JavaScript projects with pre-configured linting
 
 This template provides a solid foundation for any new JavaScript project, ensuring code quality and consistency from the start.
 
-## Table of Contents <!-- omit in toc -->
+## Table of Contents
 
-- [Quick Start](#quick-start)
-- [Why Choose `js-quality-started`?](#why-choose-js-quality-started)
-- [What's Inside?](#whats-inside)
-- [Getting Started](#getting-started)
-  - [Using as a Template](#using-as-a-template)
-  - [Manual Setup](#manual-setup)
-  - [Post-Template Setup](#post-template-setup)
-- [Available Scripts](#available-scripts)
-- [How It Works](#how-it-works)
-  - [Pre-commit Hooks](#pre-commit-hooks)
-  - [CI/CD Pipelines](#cicd-pipelines)
-- [Customization](#customization)
-- [Code Coverage](#code-coverage)
-- [Contributing](#contributing)
-- [License](#license)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Quick Start
 
 ```bash
-npx degit your-github-username/js-quality-started my-new-project
-cd my-new-project
+git clone https://github.com/{{GITHUB_USERNAME}}/{{PROJECT_NAME}}.git
+cd {{PROJECT_NAME}}
 npm install
-npm test
+npm run setup # Clearly state to run your setup script!
 # Start building!
 ```
 
@@ -97,8 +85,8 @@ This template comes pre-configured with a suite of modern, industry-standard too
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/your-new-repo.git # Replace with your actual repository URL
-   cd your-new-repo
+   git clone https://github.com/{{GITHUB_USERNAME}}/{{PROJECT_NAME}}.git # Replace with your actual repository URL
+   cd {{PROJECT_NAME}}
    ```
 
 2. Install dependencies:
@@ -113,16 +101,18 @@ This template comes pre-configured with a suite of modern, industry-standard too
 
 ### Post-Template Setup
 
-After creating your repository from this template, be sure to:
+After creating your repository from this template and cloning it locally, personalize your project by running the setup script:
 
-1. **Update `package.json`**: Change the `name`, `description`, and `author` fields.
-2. **Update `LICENSE`**: Modify the `[year]` and `[fullname]` to reflect your project's ownership.
-3. **Update `CODE_OF_CONDUCT.md` and `CONTRIBUTING.md`**: Replace the `[YOUR_PROJECT_CONTACT_EMAIL]` placeholder with a valid project contact email.
+```bash
+npm install # Ensure dependencies are installed, including 'inquirer'
+npm run setup
+```
 
 ## Available Scripts
 
 In the project directory, you can run:
 
+````bash
 - `npm test`: Runs the tests using Jest.
 - `npm run lint`: Lints all `.js` files in the project.
 - `npm run lint:fix`: Lints and automatically fixes fixable issues.
@@ -132,6 +122,8 @@ In the project directory, you can run:
 - `npm run lint:md:fix`: Lints and automatically fixes fixable issues in Markdown files.
 - `npm run format:md`: Checks for formatting issues with Prettier for Markdown files.
 - `npm run format:md:fix`: Formats all Markdown files with Prettier.
+- `npm run toc`: Generates a Table of Contents for the `README.md` file.
+- `npm run fix:all`: Runs all fixable scripts in one command.
 
 ## How It Works
 
@@ -185,8 +177,7 @@ To get a dynamic code coverage badge like the one at the top of this `README.md`
      uses: codecov/codecov-action@v4
      with:
        token: ${{ secrets.CODECOV_TOKEN }}
-   ```
-
+```
 5. Update the badge URL in `README.md` with your specific repository details and token (if required by Codecov for public repos, though often not for public repos).
 
 ## Contributing
@@ -195,4 +186,5 @@ We welcome contributions! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for 
 
 ## License
 
-This project is licensed under the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the [LICENSE](LICENSE) file for details.
+````
