@@ -34,4 +34,4 @@ jobs:
       - name: Audit for vulnerabilities
         run: npm audit --omit-dev --omit=optional --omit=peer
       - name: Run tests
-        run: npm test --passWithNoTests
+        run: npm test
