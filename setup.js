@@ -4,6 +4,14 @@ const fs = require('fs');
 const path = require('path');
 const inquirer = require('inquirer');
 
+// CHANGE THIS LINE:
+// const inquirer = require('inquirer');
+// TO THIS:
+const prompt = inquirer.default.prompt; // Extract the prompt function
+
+// You can remove the debug line now
+// console.log('DEBUG: Value of inquirer after require:', inquirer);
+
 // Current known license types commonly used (for package.json and LICENSE file placeholder)
 const standardLicenseTypes = [
   'MIT',
@@ -39,7 +47,10 @@ async function getUserInputs() {
 
   const currentYear = new Date().getFullYear().toString();
 
-  const answers = await inquirer.prompt([
+  // CHANGE THIS LINE:
+  // const answers = await inquirer.prompt([
+  // TO THIS:
+  const answers = await prompt([ // Use the extracted prompt function
     {
       type: 'input',
       name: 'projectName',
@@ -138,17 +149,17 @@ To get a dynamic code coverage badge like the one at the top of this \`README.md
 
 **Steps to set up Codecov (example):**
 
-1.  Sign up for Codecov with your GitHub account.
-2.  Add your repository to Codecov.
-3.  Codecov will provide you with a \`CODECOV_TOKEN\`. Add this token as a **secret** in your GitHub repository settings (e.g., named \`CODECOV_TOKEN\`).
-4.  Add a step to your CI workflow (\`.github/workflows/ci.yml\`) to upload the coverage report to Codecov. This typically involves adding a step like:
+1. Sign up for Codecov with your GitHub account.
+2. Add your repository to Codecov.
+3. Codecov will provide you with a \`CODECOV_TOKEN\`. Add this token as a **secret** in your GitHub repository settings (e.g., named \`CODECOV_TOKEN\`).
+4. Add a step to your CI workflow (\`.github/workflows/ci.yml\`) to upload the coverage report to Codecov. This typically involves adding a step like:
 
-    \`\`\`yaml
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v4
-      with:
-        token: \${{ secrets.CODECOV_TOKEN }}
-    \`\`\`
+  \`\`\`yaml
+  - name: Upload coverage to Codecov
+   uses: codecov/codecov-action@v4
+   with:
+    token: \${{ secrets.CODECOV_TOKEN }}
+ \`\`\`
 `;
     answers.codeCoverageSectionToc = `- [Code Coverage](#code-coverage)`;
   } else {
