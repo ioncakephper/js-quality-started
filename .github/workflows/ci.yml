@@ -33,5 +33,15 @@ jobs:
         run: npm run format:md
       - name: Audit for vulnerabilities
         run: npm audit --production
+      - name: Check for test files
+        id: check_files
+        shell: bash
+        run: |
+          shopt -s globstar nullglob
+          files=(**/*.test.js **/*.spec.js)
+          if [ ${#files[@]} -gt 0 ]; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          fi
       - name: Run tests
+        if: steps.check_files.outputs.exists == 'true'
         run: npm test
